@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navi {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    background-color: transparent;
+}
+.logo {
+    display: flex; /* Use flexbox for the logo section */
+    align-items: center; /* Center items vertically */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+.logo a h1 {
+    margin: 10px;
+    font-size: 24px;
+}
+.logo a h1 span {
+    color: rgb(228, 186, 49);
+}
+.menu {
+    flex: 1;
+    text-align: right;
+    margin: 28px 100px 0 0;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.5s;
+}
+.menu ul li a:hover {
+    color: rgb(228, 186, 49);
+}
+.menuicon {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+.menuicon i span {
+    font-weight: 600;
+}
+    
+/* Background Cover Image */
+.cover {
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    color: white;
+}
+.cover .information {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+}
+/* Services Section */
+.service {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #F8F9FA;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service .details {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.details .info {
+    padding: 0 15px;
+}
+.details .info .logo {
+    padding: 34px;
+    width: 45px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+}
+#head{
+    font-size: larger;
+    padding: 20px 0 10px;
+    color: black;
+    font-weight: 900;
+}
+.details .info {
+    padding: 20px 0 10px;
+    color: black;
+    font-weight: 600;
+}
+body {
+    background: linear-gradient(to right, skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+  .p1 {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .no1h3 {
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: orangered;
+  }
+  .Edup{
+    text-decoration: none;
+    color: rgb(228, 186, 49);
+  }
+
+/* Course */
+.courses img {
+    padding:30px; 
+    height:20px;
+    display: flex;
+    left: 100px;
+    margin-top: 30px;
+} 
+ .p2{
+    font-size: 20px;
+    font-weight: 650;
+    display: flex;
+    left: 100px;
+    margin-left: 60px;
+   
+}
+/* Course List */
+.courselist{
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    border: 2px;
+    border-style: ridge;    
+    height: 100%; 
+    width: 50%;
+    margin-left:auto; 
+    margin-right:auto; 
+    color:white;
+}
+table{
+    width:100%;
+
+}
+
+  
+
+
+/* Footer */
+footer {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    text-align: center;
+    padding: 15px 0;
+}
+footer p {
+    font-size: 14px;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+footer a:hover {
+    color: white;
+}
+footer a strong {
+    font-size: 16px;
+}

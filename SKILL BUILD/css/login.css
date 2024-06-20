@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 90vh; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.left, .right {
+    padding: 20px;
+}
+
+.left {
+    background-color: #000;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-content {
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.right {
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto; 
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.terms label {
+    margin-left: 10px;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.home-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #fff;
+    color: #000;
+}

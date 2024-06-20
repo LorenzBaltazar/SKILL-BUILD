@@ -1,0 +1,186 @@
+.navi {
+    width: 100%;
+    max-width: 1200px; 
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: transparent;
+    padding: 10px 20px; 
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo img {
+    height: 60px; 
+   
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    display: flex; 
+    align-items: center; 
+}
+
+.logo a h1 {
+    margin-left: 10px; 
+    font-size: 24px;
+}
+
+.logo a h1 span {
+    color: rgb(228, 186, 49);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-left: 15px; /* Espasyo sa pagitan ng mga item sa menu */
+}
+
+.menu ul li:first-child {
+    margin-left: 0; 
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.5s;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: rgb(228, 186, 49);
+}
+
+.menuicon {
+    display: none; 
+    margin-left: auto; 
+    color: white;
+    cursor: pointer;
+}
+
+.menuicon i span {
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .navi {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .logo {
+        margin-bottom: 20px; 
+    }
+
+    .menu {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .menu ul li {
+        margin: 10px 0; 
+    }
+
+    .menuicon {
+        display: block; 
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(2, 42, 177, 0.8), rgba(13, 0, 88, 0.6));
+    color: white; /* Default text color to white for readability */
+}
+
+header {
+    background-color: #282828; /* Darker grey for the header */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.mentors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.mentor {
+    background-color: rgba(255, 255, 255, 0.9); /* Light grey background for the boxes */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 200px;
+    color: #333; /* Text color inside mentor cards */
+}
+
+.mentor img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.mentor h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    color: #333; /* Dark grey for the mentor names */
+}
+
+.mentor p {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    .menuicon {
+        display: block;
+    }
+    .mentors {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mentor {
+        width: 90%;
+    }
+}
